@@ -1,128 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kumar Gourab Barik - Resume</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="resume-container">
-    <div class="profile-header">
-      <div class="profile-image">
-        <img src="assets/Pass Photo.jpg" alt="Kumar Gourab Barik" onerror="this.outerHTML='<p>Kumar Gourab Barik</p>'">
-      </div>
-      <h1>KUMAR GOURAB BARIK</h1>
-      <h2>WEBSITE DEVELOPER</h2>
-    </div>
+    <aside class="sidebar">
+      <img src="assets/profile.jpg" alt="Profile Picture" class="profile-img"/>
+      <h1>Kumar Gourab Barik</h1>
+      <p class="role">Website Developer</p>
 
-    <div class="resume-content">
-      <div class="left-column">
-        <section class="contact">
-          <h3>CONTACT</h3>
-          <p> +91-9556445740</p>
-          <p>✉️ kumargourabarik806@gmail.com</p>
-          <p>📍 Khandagiri Near Near JV park, Bhubaneswar Odisha-751030</p>
-        </section>
-
-        <section class="education">
-          <h3>EDUCATION</h3>
-          <div class="edu-item">
-            <h4>UTKAL UNIVERSITY</h4>
-            <p>2019-2023</p>
-            <p>Bachelor of Science in Mathematics</p>
-          </div>
-          <div class="edu-item">
-            <h4>BPUT UNIVERSITY</h4>
-            <p>2023-2025</p>
-            <p>Master of Computer Applications(MCA)</p>
-          </div>
-        </section>
-
-        <section class="skills">
-          <h3>SKILLS</h3>
-          <ul>
-            <li>REACT JS</li>
-            <li>PHP</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JAVA Script</li>
-            <li>ORACLE/NET</li>
-          </ul>
-        </section>
-
-        <section class="declaration">
-          <h3>DECLARATION</h3>
-          <p>I hereby declared that all the above mentioned details are correct to the best of my knowledge.</p>
-        </section>
+      <div class="section">
+        <h2>Contact</h2>
+        <p>📞 +91-9556445740</p>
+        <p id="emailCopy" style="cursor: pointer; color: blue;">📧 kumargourabbarik06@gmail.com</p>
+        <p id="copyMsg" style="color: green; font-size: 12px;"></p>
+        <p>📍 Bhubaneswar, Odisha - 751030</p>
       </div>
 
-      <div class="right-column">
-        <section class="profile">
-          <h3>PROFILE</h3>
-          <p>Enthusiastic and motivated Website Developer with a strong focus on React. Passionate about creating responsive, dynamic, and user-centric web applications. Eager to learn new technologies, collaborate with a team, and contribute to delivering high-impact digital solutions. Currently looking for an opportunity to grow my skills and make a measurable contribution in a challenging and creative environment.</p>
-        </section>
-
-        <section class="projects">
-          <h3>PROJECTS</h3>
-          <div class="project-item">
-            <h4>E-Commerce Website</h4>
-            <p><strong>Technologies Used:</strong> HTML, CSS, JAVA Script, PHP, MySQL</p>
-            <p>Description:</p>
-            <ul>
-              <li>Allows users to browse products, view details and manage a shopping cart</li>
-              <li>The system supports modern UI elements</li>
-              <li>Product galleries, dropdowns, quantity select and related production section</li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="certification">
-          <h3>CERTIFICATION</h3>
-          <div class="cert-item">
-            <p>ASP .NET Core - Sysoft Learning Year of Completion: 2023</p>
-            <p>Oracle / .NET - Sysoft Learning Year of Completion: 2023</p>
-            <p>Web Designing And Development - WebBucket Learning Year of Completion: 2025</p>
-          </div>
-        </section>
-
-        <section class="personal-strength">
-          <h3>PERSONAL STRENGTH</h3>
-          <ul>
-            <li>Punctual, Dedicated, Hardworking</li>
-            <li>Good Communication ability</li>
-            <li>Ability to work under pressure</li>
-            <li>Easily adaptable to a new environment</li>
-          </ul>
-        </section>
-
-        <section class="personal-details">
-          <h3>PERSONAL DETAILS</h3>
-          <table>
-            <tr>
-              <td>Father's Name</td>
-              <td>Gopal Krishna Barik</td>
-            </tr>
-            <tr>
-              <td>Marital Status</td>
-              <td>Unmarried</td>
-            </tr>
-            <tr>
-              <td>Date of Birth</td>
-              <td>1st Feb 2001</td>
-            </tr>
-            <tr>
-              <td>Nationality</td>
-              <td>Indian</td>
-            </tr>
-            <tr>
-              <td>LinkedIn</td>
-              <td><a href="https://www.linkedin.com/in/kumar-gourab-367d8258/">Profile Link</a></td>
-            </tr>
-          </table>
-        </section>
+      <div class="section">
+        <h2>Education</h2>
+        <p><strong>2019–2023</strong><br>B.Sc Mathematics, Utkal University</p>
+        <p><strong>2023–2025</strong><br>MCA, BPUT University</p>
       </div>
-    </div>
+
+      <div class="section">
+        <h2>Skills</h2>
+        <ul>
+          <li>React JS</li>
+          <li>PHP</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Oracle/.NET</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Declaration</h2>
+        <p>I hereby declare that all the above mentioned details are correct to the best of my knowledge.</p>
+        <p style="margin-top: 10px;">Kumar Gourab Barik</p>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <!-- <button id="darkModeBtn">Toggle Dark Mode</button>
+      <p><strong>Date:</strong> <span id="currentDate"></span></p> -->
+
+        <div class="top-bar">
+          <button id="darkModeBtn">Toggle Dark Mode</button>
+        </div>
+    
+
+      <section>
+        <h2>Profile</h2>
+        <p>Enthusiastic and motivated Website Developer with a strong focus on React. Passionate about creating responsive, dynamic, and user-centric web applications. Eager to learn new technologies, collaborate with a team, and contribute to delivering high-impact digital solutions.</p>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+        <p><strong>Project Title:</strong> E-Commerce Website</p>
+        <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, PHP, MySQL</p>
+        <ul>
+          <li>Browse products, view detailed pages, and manage a shopping cart.</li>
+          <li>Modern UI with product galleries, dropdowns, quantity select, etc.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Certifications</h2>
+        <ul>
+          <li>ASP .NET Core - Sysoft, 2023</li>
+          <li>Oracle/.NET - Sysoft, 2023</li>
+          <li>Web Designing & Development - WebBucket, 2025</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Personal Strength</h2>
+        <ul>
+          <li>Punctual, Dedicated, Hardworking</li>
+          <li>Good Communication Ability</li>
+          <li>Ability to Work Under Pressure</li>
+          <li>Adaptable to New Environments</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Personal Details</h2>
+        <p><strong>Father’s Name:</strong> Gopal Krushna Barik</p>
+        <p><strong>Marital Status:</strong> Unmarried</p>
+        <p><strong>Date of Birth:</strong> 1st Feb 2001</p>
+        <p><strong>Nationality:</strong> Indian</p>
+        <p><strong>LinkedIn:</strong> 
+          <a href="https://www.linkedin.com/in/kumar-gourab-367a18258" target="_blank" id="linkedinLink">Profile</a>
+        </p>
+      </section>
+    </main>
   </div>
 
   <script src="script.js"></script>

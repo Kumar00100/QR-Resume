@@ -1,40 +1,29 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Add hover effect to skills
-    const skillItems = document.querySelectorAll('.skills li, .personal-strength li');
-    skillItems.forEach(item => {
-        item.addEventListener('mouseenter', (e) => {
-            e.target.style.transform = 'scale(1.05)';
-            e.target.style.backgroundColor = '#5a8f9c';
-        });
-        item.addEventListener('mouseleave', (e) => {
-            e.target.style.transform = 'scale(1)';
-            e.target.style.backgroundColor = '#4a6f7c';
-        });
-    });
+// 1. Auto Fill Date
+document.addEventListener("DOMContentLoaded", () => {
+  const dateElem = document.getElementById("currentDate");
+  const today = new Date().toLocaleDateString();
+  if (dateElem) {
+    dateElem.textContent = today;
+  }
+});
 
-    // Print resume functionality
-    const printButton = document.createElement('button');
-    printButton.textContent = 'Print Resume';
-    printButton.style.cssText = `
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: #4a6f7c;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-        z-index: 1000;
-    `;
-    printButton.addEventListener('click', () => {
-        window.print();
-    });
-    document.body.appendChild(printButton);
+// 2. Dark Mode Toggle
+document.getElementById("darkModeBtn").addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});
 
-    // Highlight contact info on click
-    const contactSection = document.querySelector('.contact');
-    contactSection.addEventListener('click', () => {
-        contactSection.style.backgroundColor = contactSection.style.backgroundColor ? '' : 'rgba(74, 111, 124, 0.1)';
-    });
-}); 
+// 3. Copy Email to Clipboard
+document.getElementById("emailCopy").addEventListener("click", () => {
+  const email = "kumargourabbarik06@gmail.com";
+  navigator.clipboard.writeText(email).then(() => {
+    document.getElementById("copyMsg").textContent = "Email copied!";
+    setTimeout(() => {
+      document.getElementById("copyMsg").textContent = "";
+    }, 2000);
+  });
+});
+
+// 4. LinkedIn Alert
+document.getElementById("linkedinLink").addEventListener("click", () => {
+  alert("Redirecting to LinkedIn profile of Kumar Gourab Barik.");
+});
